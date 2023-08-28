@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/external/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg rounded-3">
+      <div class="container-fluid">
+        <h1><a class="text-white navbar-brand" href="#">GAME REVIEWS</a></h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-category = "MMORPG">MMORPG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category = "SHOOTER">SHOOTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category = "SAILING">SAILING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category = "PERMADEATH">PERMADEATH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category = "SUPERHERO">SUPERHERO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category = "PIXEL">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="homeDisplay" class="homeDisplay my-5">
+      <div class="container">
+        <div id="HomeDisplay" class="row g-3">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="detailsDisplay d-none" id="detailsDisplay"> 
+      <div class="container">
+        <div class="detailsHeader d-flex justify-content-between align-items-center my-5">
+          <h2>Details Game</h2>
+          <a href="#"><i id="closeDetails" class="fa-solid fa-xmark"></i></a>
+        </div>
+
+        <div id="theReplacedInner" class="d-flex justify-content-between">
+
+        </div>
+      </div>
+    </section>
+
+
+    <span class="loader m-auto d-none"></span>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

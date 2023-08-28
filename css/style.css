@@ -1,0 +1,66 @@
+body{
+    background-image: url(../images/wraper.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Nerko One', cursive;
+}
+
+
+.navbar-collapse {
+
+    flex-grow: unset;
+ 
+}
+nav {
+    width: 75%;
+    margin: 50px auto 0;
+    background-color: #3A497B;
+
+    position: fixed;
+    
+}
+
+.nav-link {
+
+    color: #fff;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #0099CC;
+}
+
+.navbar-nav {
+
+    --bs-nav-link-hover-color: #0099CC;
+
+}
+
+.inner{
+    cursor: pointer;
+}
+
+.loader{
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 140px;
+    background-image: 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 0 0, 40px 0, 80px 0, 120px 0;
+    animation: pgfill 1s linear infinite;
+  }
+  
+  @keyframes pgfill {
+    0% {   background-image: linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    25% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    50% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    75% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    100% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0); }
+  }
+  
